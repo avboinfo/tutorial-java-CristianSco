@@ -4,8 +4,17 @@ import java.io.*;
 public class LeggiScriviFile{
     
 public void ScriviFile (String filename){
-  File F= new File(filename);
-  try (PrintWriter pw = new PrintWriter(F)) {
+  File f= new File(filename);
+  try {
+    PrintWriter pw = new PrintWriter(f)
+  ;
+    for(int i=0;i<10;i++){
+        pw.printf( "%f %f", Math.random(), Math.random() );
+    
+    }
+    pw.close();
+
+    
 } catch (FileNotFoundException e) {
 
     e.printStackTrace();
@@ -14,6 +23,8 @@ public void ScriviFile (String filename){
 }
 public static void  main(String[]args) {
     System.out.printf( "\n programma leggiscrivifile \n" );
+    LeggiScriviFile lsf = new LeggiScriviFile();
+    lsf.ScriviFile("F_File/LeggiScriviFile.txt");
 }
 
 }
