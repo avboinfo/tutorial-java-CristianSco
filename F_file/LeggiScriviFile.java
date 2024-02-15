@@ -9,7 +9,7 @@ public void ScriviFile (String filename){
     PrintWriter pw = new PrintWriter(f)
   ;
     for(int i=0;i<10;i++){
-        pw.printf( "%f %f", Math.random(), Math.random() );
+        pw.printf( "%.2f %.2f /n", Math.random()*10, Math.random()*10 );
     
     }
     pw.close();
