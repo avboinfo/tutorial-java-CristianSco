@@ -2,7 +2,7 @@
 ** classe stack
 */
 
-package S_Stack;
+
 
 import java.util.ArrayList;
 

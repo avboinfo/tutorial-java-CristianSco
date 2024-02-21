@@ -3,7 +3,7 @@
 ** Sandro Gallo - 08/02/2024
 */
 
-package S_Stack;
+/*
 
 public class Main {
 
@@ -16,3 +16,46 @@ public class Main {
     }
 
 }
+*/
+
+import java.io.*;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+        
+        File inputFile = new File("input.txt");
+        Scanner scanner = new Scanner(inputFile);
+
+       
+        Stack<String> stack = new Stack<>();
+
+        // Leggere le frasi 
+        while (scanner.hasNextLine()) {
+            String line = scanner.nextLine();
+            stack.push(line);
+        }
+
+        
+        scanner.close();
+
+        //  file di output
+        File outputFile = new File("output.txt");
+        PrintWriter writer = new PrintWriter(outputFile);
+
+       
+        while (true) {
+            String line = stack.pop();
+            if (line == null) // Stack vuoto
+                break;
+            writer.println(line);
+        }
+
+      
+        writer.close();
+    }
+}
+
+
+
