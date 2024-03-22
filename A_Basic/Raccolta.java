@@ -13,7 +13,7 @@ public class Raccolta {
             Scanner fileInput = new Scanner(f);
             while (fileInput.hasNextLine()) {
                 String linea = fileInput.nextLine();
-                String[] dati = linea.split(",");
+                String[] dati = linea.split(";");
                 Videogame videogame = new Videogame(dati[0], dati[1],Float.parseFloat(dati[2]),Integer.parseInt(dati[3]));
                 Lista.add(videogame);
             }

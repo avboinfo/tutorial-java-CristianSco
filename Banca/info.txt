@@ -1,0 +1,6 @@
+Scrivere un programma che costruisca un conto bancario chiamato contoDiGiulietta, versi in esso €2000, prelevi da esso €500,
+ prelevi altri €400 e infine visualizzi il saldo rimanente.
+Il programma deve poi creare un altro conto bancario chiamato contoDiRomeo, utilizzando un costruttore che inizializza la variabile saldo.
+Effettuare un bonifico dal contoDiGiulietta al contoDiRomeo di 200€. Su quest’ultimo conto deve essere poi applicato un interesse del 10%,
+ a seguito del quale viene stampato il saldo.
+Tenere traccia in un file di log di tutte le operazioni eseguite.

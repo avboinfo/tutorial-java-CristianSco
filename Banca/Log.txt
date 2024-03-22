@@ -1,0 +1,8 @@
+Giulietta ha depositato €2000.0
+Giulietta ha prelevato €500.0
+Giulietta ha prelevato €400.0
+Il saldo di Giulietta è €1100.0
+Romeo ha depositato €200.0
+Giulietta ha effettuato un bonifico di €200.0 a Romeo
+Interesse del 10.0% applicato a Romeo
+Il saldo di Romeo è €180.0
