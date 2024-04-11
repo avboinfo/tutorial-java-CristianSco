@@ -13,9 +13,11 @@ public class ProntoSoccorso {
         listaPazienti.addTail(nuovoPaziente);
         }
         else if(livelloUrgenza.equals("Rosso")){
-            listaPazienti.addHead(nuovoPaziente);
+            listaPazienti.addTail(nuovoPaziente);
            
+
         }
+        
 
           
 
