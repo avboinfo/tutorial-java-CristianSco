@@ -43,13 +43,17 @@ public class Mailbox {
     }
 
     @Override
+    
+
     public String toString() {
         StringBuilder result = new StringBuilder("Email nella casella di posta:\n");
         NodoGen<Email> current = emailList.getRoot();
         while (current != null) {
-            result.append(current.getValore().getOggetto()).append("\n");
+            result.append("Mittente: ").append(current.getValore().getMittente())
+                    .append(", Oggetto: ").append(current.getValore().getOggetto()).append("\n");
             current = current.getSuccessivo();
         }
         return result.toString();
     }
+
 }

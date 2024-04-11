@@ -14,7 +14,6 @@ public class Main {
         mailbox.addEmail(new Email("mittente3", "Oggetto 3", new Date(), "Testo email 3"));
 
         // Stampa delle email nella casella di posta
-        System.out.println("Email nella casella di posta:");
         System.out.println(mailbox);
 
         // Ricerca di email con "Oggetto" nell'oggetto
@@ -23,10 +22,5 @@ public class Main {
         System.out.println("Risultati della ricerca per '" + searchText + "':");
         System.out.println(searchResults);
 
-        // Eliminazione della prima email
-        mailbox.deleteEmail(0);
-        System.out.println("Dopo l'eliminazione della prima email:");
-        System.out.println(mailbox);
     }
 }
-
